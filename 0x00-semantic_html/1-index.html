@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A blog post about semantic HTML and accessibility practices">
+    <meta name="keywords" content="HTML, Semantic, Accessibility, Blog, SEO">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Blog Post</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 25px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+        
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        main {
+            padding: 40px 0;
+        }
+        
+        article {
+            background: white;
+            border-radius: 10px;
+            padding: 35px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 36px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 15px;
+        }
+        
+        .content-section {
+            margin-top: 25px;
+        }
+        
+        .content-section h2 {
+            color: #3498db;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        
+        .content-section p {
+            margin-bottom: 15px;
+            font-size: 17px;
+        }
+        
+        .content-section ul, .content-section ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .content-section li {
+            margin-bottom: 8px;
+        }
+        
+        .code-example {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        
+        .code-example code {
+            font-family: 'Courier New', monospace;
+            line-height: 1.5;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-links li {
+                margin: 10px 0;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            article {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">SemanticBlog</div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <article>
+            <h1>Understanding Semantic HTML for Better Accessibility</h1>
+            
+            <section class="content-section">
+                <h2>What is Semantic HTML?</h2>
+                <p>Semantic HTML introduces meaning to the web page rather than just presentation. It makes web content more accessible and helps search engines understand the content structure.</p>
+                <p>Using semantic elements like &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt;, and &lt;footer&gt; provides clarity to both developers and browsers.</p>
+                
+                <div class="code-example">
+                    <code>
+&lt;header&gt;
+    &lt;nav&gt;
+        &lt;!-- Navigation links --&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+&lt;main&gt;
+    &lt;article&gt;
+        &lt;h1&gt;Article Title&lt;/h1&gt;
+        &lt;section&gt;
+            &lt;!-- Content section --&gt;
+        &lt;/section&gt;
+    &lt;/article&gt;
+&lt;/main&gt;
+&lt;footer&gt;
+    &lt;!-- Footer content --&gt;
+&lt;/footer&gt;
+                    </code>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <h2>Benefits of Semantic Elements</h2>
+                <ul>
+                    <li><strong>Improved accessibility:</strong> Screen readers can better interpret the structure of your content.</li>
+                    <li><strong>Better SEO:</strong> Search engines can better understand your content's context and hierarchy.</li>
+                    <li><strong>Easier code maintenance:</strong> Semantic markup is more readable and maintainable.</li>
+                    <li><strong>Future-proofing:</strong> As web standards evolve, semantic HTML will remain relevant.</li>
+                </ul>
+            </section>
+            
+            <section class="content-section">
+                <h2>Common Semantic Tags</h2>
+                <ol>
+                    <li>&lt;header&gt; - Introductory content or navigation</li>
+                    <li>&lt;nav&gt; - Navigation links</li>
+                    <li>&lt;main&gt; - Main content of the document</li>
+                    <li>&lt;article&gt; - Self-contained composition</li>
+                    <li>&lt;section&gt; - Thematic grouping of content</li>
+                    <li>&lt;footer&gt; - Footer for the document or section</li>
+                    <li>&lt;aside&gt; - Tangentially related content</li>
+                    <li>&lt;figure&gt; and &lt;figcaption&gt; - Media with caption</li>
+                </ol>
+            </section>
+            
+            <section class="content-section">
+                <h2>Accessibility Best Practices</h2>
+                <p>When using semantic HTML, keep these accessibility tips in mind:</p>
+                <ul>
+                    <li>Use proper heading hierarchy (h1 > h2 > h3, etc.)</li>
+                    <li>Provide alt text for images</li>
+                    <li>Ensure sufficient color contrast</li>
+                    <li>Make interactive elements keyboard accessible</li>
+                    <li>Use ARIA landmarks when appropriate</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 Semantic HTML Blog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
