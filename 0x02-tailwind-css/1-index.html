@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS Grid Layout</title>
+    <!-- Using Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Add the responsive CSS for the grid */
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <header class="bg-blue-500 text-white p-6 text-center">
+        <h1 class="text-3xl font-bold">Basic CSS Grid Layout</h1>
+        <p class="mt-2">Using Tailwind CSS with responsive design</p>
+    </header>
+
+    <main class="grid grid-cols-3 gap-4 p-6">
+        <div class="bg-blue-200 p-4 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-2">Column 1</h2>
+            <p>This is the first column with bg-blue-200.</p>
+        </div>
+        <div class="bg-blue-300 p-4 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-2">Column 2</h2>
+            <p>This is the second column with bg-blue-300.</p>
+        </div>
+        <div class="bg-blue-400 p-4 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-2">Column 3</h2>
+            <p>This is the third column with bg-blue-400.</p>
+        </div>
+    </main>
+
+    <div class="p-6 bg-white mt-8 mx-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold mb-4">How This Was Created</h2>
+        <p class="mb-4">This responsive grid layout was created using Tailwind CSS classes:</p>
+        
+        <div class="bg-gray-800 text-green-400 p-4 rounded mb-4">
+            <code class="block mb-2">class="grid grid-cols-3 gap-4"</code>
+            <code class="block mb-2">class="bg-blue-200 p-4"</code>
+            <code class="block mb-2">class="bg-blue-300 p-4"</code>
+            <code class="block">class="bg-blue-400 p-4"</code>
+        </div>
+        
+        <p class="mb-4">The layout is responsive and will switch to a single column on screens smaller than 768px:</p>
+        
+        <div class="bg-gray-800 text-green-400 p-4 rounded">
+            <code>@media (max-width: 768px) {</code>
+            <code class="block ml-4">main { grid-template-columns: 1fr; }</code>
+            <code>}</code>
+        </div>
+    </div>
+</body>
+</html>
