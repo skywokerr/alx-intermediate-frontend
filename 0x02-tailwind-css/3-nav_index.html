@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navigation Bar</title>
+    <!-- Using Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body class="p-4 bg-gray-100 min-h-screen">
+    <header class="mb-8 text-center">
+        <h1 class="text-3xl font-bold text-blue-700">Flexbox Navigation Bar</h1>
+        <p class="text-gray-600 mt-2">Responsive navigation using Tailwind CSS and Flexbox</p>
+    </header>
+
+    <main class="max-w-4xl mx-auto">
+        <section class="mb-8 bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Navigation Bar</h2>
+            
+            <!-- Navigation Bar -->
+            <nav class="flex space-x-5 justify-center bg-gray-300 text-white p-4 rounded-lg mb-6">
+                <a href="#" class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg transition-colors duration-200">Home</a>
+                <a href="#" class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg transition-colors duration-200">About</a>
+                <a href="#" class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg transition-colors duration-200">Services</a>
+                <a href="#" class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg transition-colors duration-200">Contact</a>
+            </nav>
+            
+            <p class="text-gray-600">Resize your browser to see the responsive behavior. On mobile screens, the navigation will change to a vertical layout.</p>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Implementation Details</h2>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-medium mb-2">Navigation Container</h3>
+                <div class="bg-gray-800 text-green-400 p-4 rounded mb-2">
+                    <code>class="flex space-x-5 justify-center bg-gray-300 text-white p-4"</code>
+                </div>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><code>flex</code>: Enables flexbox</li>
+                    <li><code>space-x-5</code>: Adds horizontal spacing between children</li>
+                    <li><code>justify-center</code>: Centers the navigation items</li>
+                    <li><code>bg-gray-300</code>: Sets the background color</li>
+                    <li><code>text-white</code>: Sets the text color</li>
+                    <li><code>p-4</code>: Adds padding</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-medium mb-2">Navigation Items</h3>
+                <div class="bg-gray-800 text-green-400 p-4 rounded mb-2">
+                    <code>class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg"</code>
+                </div>
+                <ul class="list-disc list-inside text-gray-700 ml-4">
+                    <li><code>px-2</code>: Adds horizontal padding</li>
+                    <li><code>text-xl</code>: Sets the font size</li>
+                    <li><code>hover:bg-gray-500</code>: Changes background on hover</li>
+                    <li><code>p-2</code>: Adds padding</li>
+                    <li><code>rounded-lg</code>: Rounds the corners</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-medium mb-2">Responsive Design</h3>
+                <div class="bg-gray-800 text-green-400 p-4 rounded mb-2">
+                    <code>@media (max-width: 768px) {<br>
+                    &nbsp;&nbsp;nav {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: column;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;align-items: flex-start;<br>
+                    &nbsp;&nbsp;}<br>
+                    }</code>
+                </div>
+                <p class="text-gray-700">On screens smaller than 768px, the navigation changes to a vertical layout with items aligned to the start.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-8 text-center text-gray-600">
+        <p>Flexbox Navigation Bar with Tailwind CSS</p>
+    </footer>
+</body>
+</html>
