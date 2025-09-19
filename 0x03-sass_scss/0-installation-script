@@ -1,0 +1,40 @@
+# SASS/SCSS Installation Steps
+# This script outlines the process to install SASS using npm
+
+# Prerequisites:
+# 1. Ensure you have Node.js installed (version 16 or higher recommended)
+#    Check your Node.js version with: node --version
+
+# Installation Steps:
+
+# 1. Initialize a new npm project (if you haven't already)
+#    This creates a package.json file to manage dependencies
+npm init -y
+
+# 2. Install SASS locally as a development dependency
+#    Using version 3.7.4 as specified in the requirements
+npm install sass@3.7.4 --save-dev
+
+# 3. Verify the installation
+#    Check that SASS was installed correctly
+npx sass --version
+
+# 4. (Optional) Add a script to your package.json for easy compilation
+#    Edit your package.json and add under the "scripts" section:
+#    "compile:sass": "sass scss:css --watch"
+#
+#    This would watch for changes in scss/ directory and compile to css/
+
+# Usage:
+# To compile SCSS files to CSS, you can use:
+# npx sass input.scss output.css
+
+# Or use the watch mode to automatically compile on changes:
+# npx sass --watch scss:css
+
+# Note: The above commands assume you have:
+# - SCSS files in a 'scss' directory
+# - Want to output CSS to a 'css' directory
+
+# For more information, refer to the SASS documentation:
+# https://sass-lang.com/documentation

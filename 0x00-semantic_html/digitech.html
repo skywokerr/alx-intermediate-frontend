@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAIN_WITH_DIGITECH - Social Media Ad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .ad-container {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .gradient-background {
+            background: linear-gradient(135deg, #8A2BE2, #1E90FF, #FF1493);
+            padding: 30px;
+            position: relative;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .text-content {
+            flex: 1;
+            min-width: 300px;
+            color: white;
+            padding-right: 20px;
+        }
+        
+        .image-content {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .headline {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .selling-points {
+            list-style: none;
+            margin: 25px 0;
+        }
+        
+        .selling-points li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        
+        .selling-points i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .platforms {
+            display: flex;
+            gap: 20px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+        
+        .platform {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            backdrop-filter: blur(5px);
+        }
+        
+        .cta-bar {
+            background: rgba(255, 255, 255, 0.9);
+            color: #8A2BE2;
+            padding: 18px 25px;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 1.3rem;
+            text-align: center;
+            margin-top: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .woman-figure {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            .text-content {
+                padding-right: 0;
+                margin-bottom: 30px;
+            }
+            
+            .headline {
+                font-size: 2.2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .gradient-background {
+                padding: 20px;
+            }
+            
+            .headline {
+                font-size: 1.8rem;
+            }
+            
+            .selling-points li {
+                font-size: 1rem;
+            }
+            
+            .cta-bar {
+                font-size: 1.1rem;
+                padding: 14px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ad-container">
+        <div class="gradient-background">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h1 class="headline">GAIN_WITH_DIGITECH 🚀<br>Grow Your Business,<br>Boost Your Brand!</h1>
+                    
+                    <ul class="selling-points">
+                        <li><i class="fas fa-users"></i> Interactive Followers</li>
+                        <li><i class="fas fa-star"></i> Celebrity-Level Appeal</li>
+                        <li><i class="fas fa-tags"></i> Affordable Comrade's Price Packages</li>
+                        <li><i class="fas fa-handshake"></i> Professional, Seamless Dealings</li>
+                    </ul>
+                    
+                    <div class="platforms">
+                        <div class="platform">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </div>
+                        <div class="platform">
+                            <i class="fab fa-tiktok"></i> TikTok
+                        </div>
+                        <div class="platform">
+                            <i class="fab fa-youtube"></i> YouTube
+                        </div>
+                    </div>
+                    
+                    <div class="cta-bar">
+                        DM us today & grow smarter, faster, cheaper!
+                    </div>
+                </div>
+                
+                <div class="image-content">
+                    <!-- Woman figure illustration placeholder -->
+                    <svg class="woman-figure" viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Woman's head -->
+                        <circle cx="250" cy="150" r="80" fill="#FFD700" />
+                        <!-- Body -->
+                        <path d="M200 230 Q250 350 300 230 L300 500 Q250 550 200 500 Z" fill="#8A2BE2" />
+                        <!-- Hair -->
+                        <path d="M170 100 Q130 150 170 200 Q150 180 180 150 Z" fill="#000" />
+                        <path d="M330 100 Q370 150 330 200 Q350 180 320 150 Z" fill="#000" />
+                        <!-- Arms -->
+                        <path d="M200 300 Q150 350 180 400 Q200 380 230 350 Z" fill="#FFD700" />
+                        <path d="M300 300 Q350 350 320 400 Q300 380 270 350 Z" fill="#FFD700" />
+                        <!-- Dress details -->
+                        <path d="M200 350 Q250 400 300 350" stroke="#FF1493" stroke-width="5" fill="none" />
+                        <path d="M200 400 Q250 450 300 400" stroke="#FF1493" stroke-width="5" fill="none" />
+                        <!-- Gesturing hand -->
+                        <circle cx="150" cy="380" r="20" fill="#FFD700" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
